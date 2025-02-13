@@ -5,3 +5,4 @@ const map = new mapboxgl.Map({
     zoom: 8,
     center: [-74, 40.725]
 });
+
