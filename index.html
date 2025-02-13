@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Nirmohi Kathrecha" />
+    <meta name="author" content="Nirmohi Hemant Kathrecha" />
     <meta
       name="keywords"
       content="architecture, urbanism, migration, climate change, equity, gender, housing studies"
     />
-    <title>My Research and Work</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Assignment 3 - NYC Plazas</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,98 +24,26 @@
   </head>
   <body>
     <header>
-      <a class="nav-title" href="/">Nirmohi Hemant Kathrecha</a>
+      <nav>
+        <a class="nav-title" href="../index.html">Nirmohi Hemant Kathrecha</a>
+      </nav>
     </header>
+    
     <main>
-      <section id="about">
-        <p>Hi! I'm Nirmohi.</p>
-        <p>
-          I am a licensed architect and designer working at the intersection of
-          <strong>urbanism, climate change, and equity</strong>. My
-          work focuses on spatial justice, housing studies, and the urban
-          commons.
-        </p>
-        <p>
-          Currently, I am studying at MS Advanced Urban Design at Cornell University in New York. My previous projects have examined
-          <strong>urban flooding, density, and sea-level rise</strong> in
-          Mumbai, and I have worked with local communities and policymakers to
-          propose interventions.
-        </p>
-        <p>
-          My professional experience includes working with <strong><a href="https://www.sjkarchitects.com/">SJK
-          Architects</a></strong> on sustainability and material lifecycle research
-          and contributing to designing adaptive urban spaces. With a keen interest in research and writing, I have also been
-          featured in <em>Unbuilt 2.0: Architecture of the Future Collectives</em>, <em>Mid-Day</em> and <em>Citizen Matters</em> for my
-          research on climate change and mapping methodologies.
-        </p>
-      </section>
-
-      <section id="projects">
-        <h2>Selected Projects</h2>
-
-        <div class="project">
-          <img
-            class="project-thumbnail"
-            src="Data_mapping_thumbnail.png"
-            alt="Map project"
-          />
-          <p class="project-title">Mapping</p>
-          <p class="project-description">
-            <a href="./Assignment_1/index.html">Data Mapping</a>
-          </p>
-        </div>
-
-        <div class="project">
-          <img
-            class="project-thumbnail"
-            src="./Citizens Matter.jpg"
-            alt="Thumbnail of mapping floods project"
-          />
-          <p class="project-title">Mapping Floods in Mumbai</p>
-          <p class="project-description">
-            A critical exploration of how urban flooding, sea-level rise, and
-            density interact, using GIS and community-driven data collection.
-          </p>
-        </div>
-
-        <div class="project">
-          <img
-            class="project-thumbnail"
-            src="./Housing.png"
-            alt="Thumbnail of power in housing research"
-          />
-          <p class="project-title">Power Structures in Housing</p>
-          <p class="project-description">
-            A study of Site and Services housing schemes, analyzed through
-            journaling and drawing to reveal hidden power dynamics.
-          </p>
-        </div>
-        <div class="project">
-          <img
-            class="project-thumbnail"
-            src="./Inducing_Play_Page_2.jpg"
-            alt="Thumbnail of homemaking research"
-          />
-          <p class="project-title">Power Structures in Educational Institutions</p>
-          <p class="project-description">
-            As published in <strong>Unbuilt 2.0</strong>, the design creates
-            fantastical punctuations in the ‘traditional’ framework of the
-            building. It metaphorically reifies the notion of ‘play’, of a parallel
-            liberalisation from the conventional and the older zeitgeist. The
-            ambition is to provoke, evoke, to create a self-referential idea that
-            breaks away from the known and the latent. Instead of formal and
-            material aspects, it focuses on a choreography of experiences that
-            bring in this point of view.
-          </p>
-        </div>
-      </section>
+      <div class="assignment">
+        <p class="assignment-title">Mapping Public Spaces & Transit in NYC</p>
+        <p class="assignment-description">This map visualizes pedestrian plazas under the NYC Plaza Program, privately owned public spaces (POPS), open space parks, and ADA-accessible subway stations. By layering these elements, it highlights the relationship between public space and transit accessibility, revealing areas of connectivity and potential gaps in equitable urban access.</p>
+      </div>
     </main>
-
+    
+    <div id="map"></div>
+    
     <footer>
       <p class="footer-text">
-        Send me a <a href="mailto:nkathrecha@gmail.com">message</a>
-        
+        Send me a <a href="mailto:nhk45@cornell.edu">message</a>
       </p>
     </footer>
+    
+    <script src="map.js"></script>
   </body>
 </html>
